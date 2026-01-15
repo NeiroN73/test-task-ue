@@ -1,0 +1,3 @@
+[submodule "Plugins/ProjectCore"]
+	path = Plugins/ProjectCore
+	url = https://github.com/NeiroN73/ProjectCore.git
