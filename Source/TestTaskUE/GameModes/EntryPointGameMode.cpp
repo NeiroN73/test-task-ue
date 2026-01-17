@@ -62,7 +62,5 @@ void AEntryPointGameMode::BeginPlay()
 	auto LevelsService = InstallerContainer->Resolve<ULevelsService>();
 	auto LevelsConfig = LevelsService->GetLevelsConfig();
 	auto Level = LevelsConfig->GetLevel(ELevelNames::Gameplay);
-	LevelsService->LoadLevelAsync(Level,FStreamableDelegate::CreateLambda([this]
-	{
-	}));
+	LevelsService->LoadLevelAsync(Level);
 }

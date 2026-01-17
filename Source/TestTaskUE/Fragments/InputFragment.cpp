@@ -36,7 +36,7 @@ void UInputFragment::Initialize()
 	EnhancedInputComponent->BindActionValueLambda(InputConfig->LookAction, ETriggerEvent::Triggered,
 	[this](const FInputActionValue& Value)
 	{
-			auto RotateVector = Value.Get<FVector2D>();
-			OnRotateVectorChanged.Broadcast(RotateVector);
+		auto RotateVector = Value.Get<FVector2D>();
+		OnRotateVectorChanged.Broadcast(RotateVector);
 	});
 }

@@ -12,7 +12,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9902599-1018-4b01-9497-e9b6c3916fba" name="Changes" comment="" />
+    <list default="true" id="e9902599-1018-4b01-9497-e9b6c3916fba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskUE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskUE/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Blueprints/GameModes/BP_EntryPointGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Blueprints/GameModes/BP_EntryPointGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Blueprints/GameModes/BP_GameplayGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Blueprints/GameModes/BP_GameplayGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Input/IMC_DefaultInput.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Input/IMC_DefaultInput.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/Base/BaseFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/Base/BaseFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/Base/BaseFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/Base/BaseFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/PoolsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/PoolsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/ViewModelsFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/ViewModelsFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/HandlersService.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/HandlersService.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/LevelsService.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/LevelsService.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/EntryPointGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/EntryPointGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +42,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://35" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://11" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Containers/BitArray.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Containers/Map.h.inl" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Containers/SparseArray.h" root0="FORCE_HIGHLIGHTING" />
@@ -56,9 +73,9 @@
     <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.h" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="38IhvUipD2hjzAMGjZ8MC27l8Jr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -66,7 +83,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "C/C++ Project.TestTaskUE.executor": "Debug",
+    "C/C++ Project.TestTaskUE.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -182,7 +199,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -194,6 +214,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768493223441</updated>
       <workItem from="1768493225960" duration="32957000" />
+      <workItem from="1768647548883" duration="6693000" />
     </task>
     <servers />
   </component>
@@ -221,18 +242,138 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>29</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
           <line>26</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>51</line>
+          <line>54</line>
           <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>16</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>11</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
+          <line>62</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
+          <line>60</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
+          <line>48</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
+          <line>46</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
+          <line>29</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
+          <line>31</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>24</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>28</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>42</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>38</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>35</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>31</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>21</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <line>22</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/GameModes/EntryPointGameMode.cpp</url>
+          <line>64</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/GameModes/GameplayGameMode.cpp</url>
+          <line>27</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
+          <line>11</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
+          <line>18</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
+          <line>15</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
+          <line>19</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
+          <line>20</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
+          <line>21</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.h</url>
+          <line>55</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
