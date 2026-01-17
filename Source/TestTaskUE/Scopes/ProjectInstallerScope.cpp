@@ -3,14 +3,16 @@
 
 #include "ProjectInstallerScope.h"
 
-#include "ProjectCoreRuntime/Configs/Base/Config.h"
 #include "ProjectCoreRuntime/Configs/Base/Configs.h"
+#include "ProjectCoreRuntime/Factories/FragmentsFactory.h"
 #include "ProjectCoreRuntime/Factories/HandlersFactory.h"
 #include "ProjectCoreRuntime/Factories/PoolsFactory.h"
 #include "ProjectCoreRuntime/Factories/ScreensFactory.h"
 #include "ProjectCoreRuntime/Factories/ViewModelsFactory.h"
 #include "ProjectCoreRuntime/Factories/ViewsFactory.h"
 #include "ProjectCoreRuntime/SaveStates/HistorySaveState.h"
+#include "ProjectCoreRuntime/Services/AssetsService.h"
+#include "ProjectCoreRuntime/Services/HandlersService.h"
 #include "ProjectCoreRuntime/Services/HistoryService.h"
 #include "ProjectCoreRuntime/Services/LevelsService.h"
 #include "ProjectCoreRuntime/Services/PreloadsService.h"
@@ -42,11 +44,11 @@ void UProjectInstallerScope::RegisterSaveStates()
 
 void UProjectInstallerScope::RegisterFactories()
 {
+	Register<UFragmentsFactory>();
 	Register<UViewModelsFactory>();
 	Register<UScreensFactory>();
 	Register<UHandlersFactory>();
 	Register<UPoolsFactory>();
-	Register<UFragmentsFactory>();
 	Register<UViewsFactory>();
 }
 
@@ -57,7 +59,7 @@ void UProjectInstallerScope::RegisterServices()
 	Register<UScreensService>();
 	Register<ULevelsService>();
 	Register<UHandlersService>();
-	Register<UHistoryService>();
 	Register<UPreloadsService>();
+	Register<UHistoryService>();
 	Register<UTweensService>();
 }
