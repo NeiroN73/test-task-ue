@@ -8,6 +8,7 @@
 #include "ProjectCoreRuntime/Services/Base/Fragmentable.h"
 #include "ElevatorHandler.generated.h"
 
+class UElevatorPreviewComponent;
 class UBoxComponent;
 class UElevatorsJsonConfig;
 
@@ -23,6 +24,10 @@ private:
 	TObjectPtr<UStaticMeshComponent> StaticMesh;
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<UBoxComponent> OverlapBox;
+#if WITH_EDITORONLY_DATA
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<UElevatorPreviewComponent> ElevatorPreview;
+#endif
 	
 	UPROPERTY()
 	TWeakObjectPtr<UElevatorsJsonConfig> ElevatorsJsonConfig;

@@ -1,9 +1,31 @@
 {
-	"elevatorsByTag": [
+	"stagedMovesByTag": [
 		{
 			"tag":
 			{
 				"tagName": "Elevators.Elevator1"
+			},
+			"position":
+			{
+				"x": 0,
+				"y": 1000,
+				"z": 0
+			},
+			"stages": [
+				{
+					"duration": 3,
+					"easeType": "EasySinIn"
+				},
+				{
+					"duration": 2,
+					"easeType": "EasySinOut"
+				}
+			]
+		},
+		{
+			"tag":
+			{
+				"tagName": "Elevators.Elevator2"
 			},
 			"position":
 			{
@@ -13,16 +35,12 @@
 			},
 			"stages": [
 				{
-					"duration": 2,
-					"easeType": "EaseOut"
-				},
-				{
 					"duration": 3,
 					"easeType": "Linear"
 				},
 				{
 					"duration": 2,
-					"easeType": "EaseIn"
+					"easeType": "EasySinOut"
 				}
 			]
 		}

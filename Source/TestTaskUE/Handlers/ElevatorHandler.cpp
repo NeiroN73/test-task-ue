@@ -6,11 +6,10 @@
 #include "Components/BoxComponent.h"
 #include "ProjectCoreRuntime/DependencyInjection/InstallerContainer.h"
 #include "ProjectCoreRuntime/Fragments/Base/FragmentsContainer.h"
+#include "TestTaskUE/Components/ElevatorPreviewComponent.h"
 #include "TestTaskUE/Configs/ElevatorsJsonConfig.h"
 #include "TestTaskUE/Fragments/OverlapFragment.h"
-#include "TestTaskUE/Fragments/StagedActorMoveFragment.h"
-#include "TestTaskUE/Fragments/StagedControllerFragment.h"
-#include "TestTaskUE/Fragments/Base/ControllerMovable.h"
+#include "TestTaskUE/Fragments/StagedMoveFragment.h"
 
 AElevatorHandler::AElevatorHandler()
 {
@@ -20,6 +19,11 @@ AElevatorHandler::AElevatorHandler()
 	OverlapBox = CreateDefaultSubobject<UBoxComponent>(TEXT("OverlapBox"));
 	OverlapBox->SetGenerateOverlapEvents(true);
 	OverlapBox->SetupAttachment(RootComponent);
+
+#if WITH_EDITOR
+	ElevatorPreview = CreateDefaultSubobject<UElevatorPreviewComponent>(TEXT("ElevatorPreview"));
+	ElevatorPreview->SetupAttachment(RootComponent);
+#endif
 }
 
 void AElevatorHandler::Inject(UInstallerContainer* Container)
@@ -29,13 +33,9 @@ void AElevatorHandler::Inject(UInstallerContainer* Container)
 
 void AElevatorHandler::BuildFragments(UFragmentsContainer* FragmentsContainer)
 {
-	if (auto Fragment = FragmentsContainer->TryAddFragmentByInterfaces<UStagedControllerFragment>(
-		{UControllerMovable::StaticClass()}))
+	if (auto Fragment = FragmentsContainer->TryAddFragment<UStagedMoveFragment>())
 	{
 		Fragment->Configure(this, ElevatorsJsonConfig->GetElevatorParamsByTag(Tag));
-	}
-	if (auto Fragment = FragmentsContainer->TryAddFragment<UStagedActorMoveFragment>())
-	{
 	}
 	if (auto Fragment = FragmentsContainer->TryAddFragment<UOverlapFragment>())
 	{

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameplayTagContainer.h"
 #include "ProjectCoreRuntime/Configs/Base/JsonConfig.h"
+#include "ProjectCoreRuntime/Interfaces/Initializable.h"
 #include "ProjectCoreRuntime/Services/Base/TweensTypes.h"
 #include "ProjectCoreRuntime/Utils/JsonStructSerializer.h"
 #include "ElevatorsJsonConfig.generated.h"
@@ -27,10 +28,8 @@ struct FStagedMoveParams : public FJsonParams
 	
 	UPROPERTY(EditAnywhere)
 	FGameplayTag Tag;
-
 	UPROPERTY(EditAnywhere)
 	FVector Position;
-	
 	UPROPERTY(EditAnywhere)
 	TArray<FStagedMoveStageParams> Stages;
 };
@@ -41,22 +40,27 @@ struct FStagedMovesParams : public FJsonParams
 	GENERATED_BODY()
 	
 	UPROPERTY(EditAnywhere)
-	TArray<FStagedMoveParams> ElevatorsByTag;
+	TArray<FStagedMoveParams> StagedMovesByTag;
 };
 
 UCLASS()
-class TESTTASKUE_API UElevatorsJsonConfig : public UJsonConfig
+class TESTTASKUE_API UElevatorsJsonConfig : public UJsonConfig,
+public IInitializable
 {
 	GENERATED_BODY()
 
 private:
 	UPROPERTY(EditAnywhere)
 	FStagedMovesParams Elevators;
-	
-public:
-	const FStagedMoveParams* GetElevatorParamsByTag(FGameplayTag InTag) const;
+
+	UPROPERTY()
+	TMap<FGameplayTag, FStagedMoveParams> ElevatorsByTag;
 
 protected:
 	virtual void ReadJson() override;
 	virtual void WriteJson() override;
+	
+public:
+	const FStagedMoveParams* GetElevatorParamsByTag(FGameplayTag InTag) const;
+	virtual void Initialize() override;
 };

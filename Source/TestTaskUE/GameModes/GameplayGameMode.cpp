@@ -30,7 +30,7 @@ void AGameplayGameMode::BeginPlay()
 	}
 	
 	auto HandlersFactory = Container->Resolve<UHandlersFactory>();
-	HandlersFactory->SpawnCharacterHandler<APlayerHandler>("player");
+	HandlersFactory->SpawnCharacterHandler<APlayerHandler>(FGameplayTag::RequestGameplayTag("Handlers.Player"));
 
 	TickService = Container->Resolve<UTickService>();
 }

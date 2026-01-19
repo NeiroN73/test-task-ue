@@ -3,17 +3,17 @@
 
 #include "ElevatorsJsonConfig.h"
 
+void UElevatorsJsonConfig::Initialize()
+{
+	for (auto StagedMove : Elevators.StagedMovesByTag)
+	{
+		ElevatorsByTag.Add(StagedMove.Tag, StagedMove);
+	}
+}
 
 const FStagedMoveParams* UElevatorsJsonConfig::GetElevatorParamsByTag(FGameplayTag InTag) const
 {
-	for (const auto& Elevator : Elevators.ElevatorsByTag)
-	{
-		if (Elevator.Tag == InTag)
-		{
-			return &Elevator;
-		}
-	}
-	return nullptr;
+	return ElevatorsByTag.Find(InTag);
 }
 
 void UElevatorsJsonConfig::ReadJson()
