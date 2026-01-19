@@ -13,27 +13,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9902599-1018-4b01-9497-e9b6c3916fba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Assets/Configs/NewDataAsset.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/JsonConfig.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/JsonConfig.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/JsonStructSerializer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/JsonStructSerializer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorJsonConfig.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorJsonConfig.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/ElevatorHandler.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/ElevatorHandler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Blueprints/Handlers/BP_ElevatorHandler.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Assets/Configs/DA_ElevatorsJsonConfig.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorsJsonConfig.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorsJsonConfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/Base/ControllerMovable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/Base/ControllerMovable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/Base/ControllerRotatable.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/Base/ControllerRotatable.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/OverlapFragment.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/OverlapFragment.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/PawnMoveFragment.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/PawnMovementFragment.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/PlayerControllerFragment.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedActorMoveFragment.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedActorMoveFragment.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedControllerFragment.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedControllerFragment.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TestTaskUE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestTaskUE/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Blueprints/Handlers/BP_PlayerHandler.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Blueprints/Handlers/BP_PlayerHandler.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Configs/DA_Configs.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Configs/DA_Configs.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Configs/DA_PlayerConfig.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Configs/ElevatorParams.json" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Configs/ElevatorParams.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Configs/NewDataAsset.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Assets/Levels/GameplayLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Assets/Levels/GameplayLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/Config.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/Config.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/Config.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/Config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/JsonConfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/JsonConfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/EditorUtils/Logger/Logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/EditorUtils/Logger/Logger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/EditorUtils/Logger/Logger.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/EditorUtils/Logger/Logger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/Base/BaseFactory.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/Base/BaseFactory.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Fragments/Base/CharacterFragment.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Fragments/Base/CharacterFragment.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Fragments/Base/Fragment.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Fragments/Base/Fragment.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Fragments/Base/FragmentMacros.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Fragments/Base/FragmentsContainer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Fragments/Base/FragmentsContainer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/GameModes/Base/InstallerGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/GameModes/Base/InstallerGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/GameModes/Base/InstallerGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/GameModes/Base/InstallerGameMode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Handlers/Base/ActorHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Handlers/Base/ActorHandler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Handlers/CharacterHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Handlers/CharacterHandler.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/ProjectCoreRuntime.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/ProjectCoreRuntime.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/Base/Fragmentable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/Base/Fragmentable.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/Base/TweensTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/Base/TweensTypes.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/AssetPathsScriptGenerator.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/AssetPathsScriptGenerator.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/PropertyMacros.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Scopes/ProjectInstallerScope.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/Scopes/ProjectInstallerScope.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/LevelsService.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/LevelsService.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/LevelsService.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/LevelsService.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/TweensService.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/TweensService.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/TweensService.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/TweensService.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/JsonStructSerializer.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/JsonStructSerializer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorJsonConfig.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorJsonConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Configs/PlayerConfig.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Configs/PlayerConfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/PlayerControllerFragment.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/MovementFragment.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Fragments/MovementFragment.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/EntryPointGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/EntryPointGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/EntryPointGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/EntryPointGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/GameplayGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/GameplayGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/GameplayGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/GameModes/GameplayGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/ElevatorHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/ElevatorHandler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/ElevatorHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/ElevatorHandler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/TestTaskUE/TestTaskUE.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TestTaskUE/TestTaskUE.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestTaskUE.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/TestTaskUE.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,32 +90,56 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Plugins/ProjectCore" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="cidr-memory-view://11" root0="FORCE_HIGHLIGHTING" />
+    <setting file="cidr-memory-view://33" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Plugins/Runtime/ModelViewViewModel/Source/ModelViewViewModelAssetSearch/Private/MVVMAssetSearchIndexer.h" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Developer/MessageLog/Private/MessageLogModule.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/ActionableMessage/Public/ActionableMessageSubsystem.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/Blutility/Classes/ActorActionUtility.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/ContentBrowser/Public/ContentBrowserModule.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/DetailCustomizations/Private/DirectoryPathStructCustomization.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/DetailCustomizations/Private/DirectoryPathStructCustomization.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/UnrealEd/Classes/ActorFactories/ActorFactoryCharacter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/UnrealEd/Classes/Factories/DataAssetFactory.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/UnrealEd/Private/Factories/ActorFactory.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/UnrealEd/Public/Commandlets/CompileAllBlueprintsCommandlet.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/UnrealEd/Public/Elements/Component/ComponentElementEditorCopyAndPaste.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Editor/WorldPartitionEditor/Private/WorldPartition/SWorldPartitionEditorGrid2D.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Programs/AutomationTool/BuildGraph/BuildGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Programs/Shared/EpicGames.MsBuild/CsProjBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Private/Math/UnrealMath.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Private/Misc/FileHelper.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Containers/BitArray.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Containers/Map.h.inl" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Containers/SparseArray.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Containers/UnrealString.h.inl" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Delegates/Delegate.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Delegates/IDelegateInstance.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Logging/LogMacros.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Math/MathFwd.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Math/UnrealMathUtility.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Misc/Optional.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Serialization/Archive.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/Templates/SharedPointer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/UObject/NameTypes.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Core/Public/UObject/WeakObjectPtrTemplates.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/CoreUObject/Public/Templates/Casts.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectHandle.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/CoreUObject/Public/UObject/PrimaryAssetId.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/CoreUObject/Public/UObject/SoftObjectPath.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Components/ActorComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Components/BoxComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Components/PrimitiveComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Components/ShapeComponent.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Components/StaticMeshComponent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Engine/DataAsset.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Engine/DataTable.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Engine/EngineBaseTypes.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Engine/HitResult.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Engine/LocalPlayer.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Engine/StreamableManager.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/Engine/World.h" root0="FORCE_HIGHLIGHTING" />
@@ -79,8 +149,14 @@
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/GameFramework/Pawn.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Classes/GameFramework/PlayerController.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Private/Actor.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Private/Components/PrimitiveComponent.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Private/CompositeDataTable.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Public/ActorFolder.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Engine/Public/Subsystems/GameInstanceSubsystem.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/GameplayTags/Classes/GameplayTagContainer.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/InstallBundleManager/Public/InstallBundleSourceInterface.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/InteractiveToolsFramework/Public/BaseGizmos/CombinedTransformGizmo.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/InteractiveToolsFramework/Public/BaseGizmos/ComponentBoundTransformProxy.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Json/Private/Serialization/JsonSerializable.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Json/Public/Dom/JsonObject.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Json/Public/Serialization/JsonReader.h" root0="FORCE_HIGHLIGHTING" />
@@ -88,8 +164,12 @@
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Json/Public/Serialization/JsonSerializer.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Json/Public/Serialization/JsonWriter.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/JsonUtilities/Public/JsonObjectConverter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Navmesh/Private/DetourCrowd/DetourCrowd.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UnrealEngine/UE_5.7/Engine/Source/Runtime/Net/Iris/Public/Iris/ReplicationSystem/ReplicationFragment.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Absorbed/Source/Absorbed/SensorStateMachine/Sensors/WalkInputSensor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Content/Assets/Configs/ElevatorParams.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/TestTaskUE/UHT/EntryPointGameMode.gen.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Intermediate/Build/Win64/UnrealEditor/Inc/TestTaskUE/UHT/GameplayGameMode.gen.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/JsonConfig.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Configs/Base/JsonConfig.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Fragments/Base/FragmentsContainer.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -97,12 +177,22 @@
     <setting file="file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Interfaces/PreInitializable.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/JsonStructSerializer.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Utils/JsonStructSerializer.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorJsonConfig.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorJsonConfig.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/MovementFragment.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/MovementFragment.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorsJsonConfig.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Configs/ElevatorsJsonConfig.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/Base/ControllerMovable.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/Base/ControllerMovable.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/Base/ControllerRotatable.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/Base/ControllerRotatable.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/OverlapFragment.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/OverlapFragment.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/PawnMoveFragment.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/PawnMovementFragment.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/PlayerControllerFragment.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/PlayerControllerFragment.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedActorMoveFragment.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedActorMoveFragment.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedControllerFragment.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedControllerFragment.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/ElevatorHandler.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/ElevatorHandler.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -252,7 +342,8 @@
       <option name="presentableId" value="Default" />
       <updated>1768493223441</updated>
       <workItem from="1768493225960" duration="32957000" />
-      <workItem from="1768647548883" duration="20072000" />
+      <workItem from="1768647548883" duration="20197000" />
+      <workItem from="1768729678460" duration="50241000" />
     </task>
     <servers />
   </component>
@@ -279,134 +370,29 @@
           <option name="timeStamp" value="3" />
         </breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>26</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>51</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
-          <line>16</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
-          <line>11</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>59</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>57</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>45</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>43</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>29</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Handlers/PlayerHandler.cpp</url>
-          <line>30</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
-          <line>22</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
-          <line>25</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
-          <line>39</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedControllerFragment.cpp</url>
           <line>35</line>
-          <option name="timeStamp" value="69" />
+          <option name="timeStamp" value="160" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
-          <line>32</line>
-          <option name="timeStamp" value="70" />
+          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/StagedControllerFragment.cpp</url>
+          <line>33</line>
+          <option name="timeStamp" value="161" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
-          <line>28</line>
-          <option name="timeStamp" value="71" />
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/TweensService.cpp</url>
+          <line>86</line>
+          <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/Fragments/InputFragment.cpp</url>
-          <line>21</line>
-          <option name="timeStamp" value="72" />
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/TweensService.cpp</url>
+          <line>88</line>
+          <option name="timeStamp" value="164" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/GameModes/EntryPointGameMode.cpp</url>
-          <line>64</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/TestTaskUE/GameModes/GameplayGameMode.cpp</url>
-          <line>27</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
-          <line>12</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
-          <line>19</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
-          <line>16</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
-          <line>20</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
-          <line>21</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.cpp</url>
-          <line>22</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Factories/HandlersFactory.h</url>
-          <line>54</line>
-          <option name="timeStamp" value="83" />
+          <url>file://$PROJECT_DIR$/Plugins/ProjectCore/Source/ProjectCoreRuntime/Services/TweensService.cpp</url>
+          <line>84</line>
+          <option name="timeStamp" value="165" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -19,8 +19,6 @@ public IFragmentable
 	GENERATED_BODY()
 
 public:
-	APlayerHandler();
-	
 	virtual void NotifyControllerChanged() override;
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	virtual void Inject(UInstallerContainer* Container) override;
@@ -29,8 +27,6 @@ public:
 private:
 	UPROPERTY()
 	TObjectPtr<UInputConfig> InputConfig;
-	UPROPERTY()
-	TObjectPtr<UPlayerConfig> PlayerConfig;
 	UPROPERTY()
 	TObjectPtr<APlayerController> PlayerController;
 	UPROPERTY()

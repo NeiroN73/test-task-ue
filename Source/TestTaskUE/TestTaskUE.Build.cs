@@ -16,7 +16,8 @@ public class TestTaskUE : ModuleRules
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
 			"Json", 
-			"JsonUtilities"
+			"JsonUtilities",
+			"GameplayTags"
 		});
 
 		// Uncomment if you are using Slate UI

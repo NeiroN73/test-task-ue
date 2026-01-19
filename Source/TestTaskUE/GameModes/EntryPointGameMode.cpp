@@ -64,3 +64,10 @@ void AEntryPointGameMode::BeginPlay()
 	auto Level = LevelsConfig->GetLevel(ELevelNames::Gameplay);
 	LevelsService->LoadLevelAsync(Level);
 }
+
+void AEntryPointGameMode::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	TickService->OnTick(DeltaTime);
+}

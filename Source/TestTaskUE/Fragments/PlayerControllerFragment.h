@@ -3,20 +3,21 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Base/ControllerMovable.h"
+#include "Base/ControllerRotatable.h"
 #include "ProjectCoreRuntime/DependencyInjection/Injectable.h"
 #include "ProjectCoreRuntime/Fragments/Base/Fragment.h"
 #include "ProjectCoreRuntime/Interfaces/Initializable.h"
-#include "InputFragment.generated.h"
-
-DECLARE_MULTICAST_DELEGATE_OneParam(FOnMoveVectorChanged, const FVector2D&);
-DECLARE_MULTICAST_DELEGATE_OneParam(FOnRotateVectorChanged, const FVector2D&);
+#include "PlayerControllerFragment.generated.h"
 
 class UInputConfig;
 
 UCLASS()
-class TESTTASKUE_API UInputFragment : public UFragment,
+class TESTTASKUE_API UPlayerControllerFragment : public UFragment,
 public IInjectable,
-public IInitializable
+public IInitializable,
+public IControllerMovable,
+public IControllerRotatable
 {
 	GENERATED_BODY()
 
@@ -25,13 +26,14 @@ private:
 	TWeakObjectPtr<UInputConfig> InputConfig;
 	UPROPERTY()
 	TWeakObjectPtr<UEnhancedInputComponent> EnhancedInputComponent;
+	FVector2D MoveInputDirection;
+	FVector2D RotateInputDirection;
 	
 public:
-	FOnMoveVectorChanged OnMoveVectorChanged;
-	FOnRotateVectorChanged OnRotateVectorChanged;
-	
 	virtual void Inject(UInstallerContainer* Container) override;
 	virtual void Initialize() override;
 	
 	void Configure(UEnhancedInputComponent* InEnhancedInputComponent);
+	virtual const FVector2D& GetMoveDirection() const override;
+	virtual const FVector2D& GetRotateDirection() const override;
 };

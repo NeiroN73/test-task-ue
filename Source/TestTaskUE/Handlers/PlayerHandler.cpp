@@ -8,13 +8,9 @@
 #include "ProjectCoreRuntime/DependencyInjection/InstallerContainer.h"
 #include "ProjectCoreRuntime/Fragments/Base/FragmentsContainer.h"
 #include "TestTaskUE/Configs/InputConfig.h"
-#include "TestTaskUE/Fragments/InputFragment.h"
-#include "TestTaskUE/Fragments/MovementFragment.h"
+#include "TestTaskUE/Fragments/PlayerControllerFragment.h"
+#include "TestTaskUE/Fragments/PawnMoveFragment.h"
 
-
-APlayerHandler::APlayerHandler()
-{
-}
 
 void APlayerHandler::NotifyControllerChanged()
 {
@@ -28,11 +24,6 @@ void APlayerHandler::NotifyControllerChanged()
 			ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(InPlayerController->GetLocalPlayer()))
 		{
 			Subsystem->AddMappingContext(InputConfig->PlayerMappingContext, 0);
-		}
-
-		// вызываем здесь, чтобы прокинуть контроллер
-		if (Controller)
-		{
 		}
 	}
 }
@@ -50,18 +41,18 @@ void APlayerHandler::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 void APlayerHandler::Inject(UInstallerContainer* Container)
 {
 	InputConfig = Container->Resolve<UInputConfig>();
-	//PlayerConfig = Container->Resolve<UPlayerConfig>();
 }
 
 void APlayerHandler::BuildFragments(UFragmentsContainer* FragmentsContainer)
 {
-	if (auto Fragment = FragmentsContainer->TryAddFragment<UInputFragment>())
+	if (auto Fragment = FragmentsContainer->TryAddFragmentByInterfaces<UPlayerControllerFragment>(
+		{UControllerMovable::StaticClass(), UControllerRotatable::StaticClass()}))
 	{
 		Fragment->Configure(EnhancedInputComponent);
 	}
-	if (auto Fragment = FragmentsContainer->TryAddFragment<UMovementFragment>())
+	if (auto Fragment = FragmentsContainer->TryAddFragment<UPawnMoveFragment>())
 	{
-		Fragment->Configure(FragmentsContainer, this);
+		Fragment->Configure(this);
 	}
 }
 

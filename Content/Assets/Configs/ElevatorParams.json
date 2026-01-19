@@ -1,4 +1,30 @@
 {
-	"duration": 8,
-	"name": "None"
+	"elevatorsByTag": [
+		{
+			"tag":
+			{
+				"tagName": "Elevators.Elevator1"
+			},
+			"position":
+			{
+				"x": 0,
+				"y": 0,
+				"z": 1000
+			},
+			"stages": [
+				{
+					"duration": 2,
+					"easeType": "EaseOut"
+				},
+				{
+					"duration": 3,
+					"easeType": "Linear"
+				},
+				{
+					"duration": 2,
+					"easeType": "EaseIn"
+				}
+			]
+		}
+	]
 }

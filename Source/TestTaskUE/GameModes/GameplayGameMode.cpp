@@ -6,7 +6,9 @@
 #include "ProjectCoreRuntime/DependencyInjection/InstallerContainer.h"
 #include "ProjectCoreRuntime/Factories/HandlersFactory.h"
 #include "ProjectCoreRuntime/Installer/InstallerGameSubsystem.h"
+#include "ProjectCoreRuntime/Services/TickService.h"
 #include "TestTaskUE/Handlers/PlayerHandler.h"
+
 
 void AGameplayGameMode::BeginPlay()
 {
@@ -18,12 +20,24 @@ void AGameplayGameMode::BeginPlay()
 	auto Worldables = Container->ResolveAllImplements<IWorldable>();
 	if (auto InWorld = GetWorld())
 	{
-		for (auto Worldable : Worldables)
+		if (!Worldables.IsEmpty())
 		{
-			Worldable->WorldChanged(InWorld);
+			for (auto Worldable : Worldables)
+			{
+				Worldable->WorldChanged(InWorld);
+			}
 		}
 	}
 	
 	auto HandlersFactory = Container->Resolve<UHandlersFactory>();
 	HandlersFactory->SpawnCharacterHandler<APlayerHandler>("player");
+
+	TickService = Container->Resolve<UTickService>();
+}
+
+void AGameplayGameMode::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	TickService->OnTick(DeltaTime);
 }
