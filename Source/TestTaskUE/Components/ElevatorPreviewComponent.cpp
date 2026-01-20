@@ -1,7 +1,7 @@
 #include "ElevatorPreviewComponent.h"
 #include "Engine/World.h"
+#include "TestTaskUE/Handlers/ElevatorHandler.h"
 
-#if WITH_EDITOR
 
 UElevatorPreviewComponent::UElevatorPreviewComponent()
 {
@@ -9,23 +9,47 @@ UElevatorPreviewComponent::UElevatorPreviewComponent()
     bTickInEditor = true;
 }
 
+#if WITH_EDITOR
 void UElevatorPreviewComponent::TickComponent(float DeltaTime, ELevelTick TickType, 
     FActorComponentTickFunction* ThisTickFunction)
 {
     Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-    UWorld* World = GetWorld();
-    if (!World || World->WorldType != EWorldType::Editor)
+    DrawElevatorPreview();
+}
+
+void UElevatorPreviewComponent::PostLoad()
+{
+    Super::PostLoad();
+
+    if (!ElevatorTag.IsValid())
     {
-        return;
+        if (auto Owner = GetOwner())
+        {
+            if (auto Elevator = Cast<AElevatorHandler>(Owner))
+            {
+                if (Elevator->GetTag().IsValid())
+                {
+                    ElevatorTag = Elevator->GetTag();
+                }
+            }
+        }
     }
 
     if (ElevatorsJsonConfig != nullptr && ElevatorTag.IsValid())
     {
-        StagedMoveParams = *ElevatorsJsonConfig->GetElevatorParamsByTag(ElevatorTag);
+        ElevatorsJsonConfig->Initialize();
+        if (const auto FoundParams = ElevatorsJsonConfig->GetElevatorParamsByTag(ElevatorTag))
+        {
+            StagedMoveParams = *FoundParams;
+        }
     }
+}
 
-    if (StagedMoveParams.Position.IsZero())
+void UElevatorPreviewComponent::DrawElevatorPreview()
+{
+    UWorld* World = GetWorld();
+    if (!World || World->WorldType != EWorldType::Editor)
     {
         return;
     }
@@ -38,4 +62,4 @@ void UElevatorPreviewComponent::TickComponent(float DeltaTime, ELevelTick TickTy
     DrawDebugLine(World, StartPos, EndPos, FColor::Green);
 }
 
-#endif // WITH_EDITOR
+#endif

@@ -5,8 +5,6 @@
 
 #include "ProjectCoreRuntime/DependencyInjection/InstallerContainer.h"
 #include "ProjectCoreRuntime/Factories/HandlersFactory.h"
-#include "ProjectCoreRuntime/Installer/InstallerGameSubsystem.h"
-#include "ProjectCoreRuntime/Services/TickService.h"
 #include "TestTaskUE/Handlers/PlayerHandler.h"
 
 
@@ -14,30 +12,10 @@ void AGameplayGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
-	auto InstallerSubsystem = GetGameInstance()->GetSubsystem<UInstallerGameSubsystem>();
-	auto Container = InstallerSubsystem->InstallerContainer;
-
-	auto Worldables = Container->ResolveAllImplements<IWorldable>();
-	if (auto InWorld = GetWorld())
-	{
-		if (!Worldables.IsEmpty())
-		{
-			for (auto Worldable : Worldables)
-			{
-				Worldable->WorldChanged(InWorld);
-			}
-		}
-	}
+	InitializeScope();
+	InitializeWorldables();
+	InitializeTickables();
 	
-	auto HandlersFactory = Container->Resolve<UHandlersFactory>();
-	HandlersFactory->SpawnCharacterHandler<APlayerHandler>(FGameplayTag::RequestGameplayTag("Handlers.Player"));
-
-	TickService = Container->Resolve<UTickService>();
-}
-
-void AGameplayGameMode::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-	TickService->OnTick(DeltaTime);
+	auto HandlersFactory = InstallerContainer->Resolve<UHandlersFactory>();
+	HandlersFactory->SpawnCharacterHandler<APlayerHandler>(PlayerTag);
 }

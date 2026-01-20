@@ -5,6 +5,7 @@
 
 void UElevatorsJsonConfig::Initialize()
 {
+	ElevatorsByTag.Empty();
 	for (auto StagedMove : Elevators.StagedMovesByTag)
 	{
 		ElevatorsByTag.Add(StagedMove.Tag, StagedMove);
@@ -16,6 +17,7 @@ const FStagedMoveParams* UElevatorsJsonConfig::GetElevatorParamsByTag(FGameplayT
 	return ElevatorsByTag.Find(InTag);
 }
 
+#if WITH_EDITOR
 void UElevatorsJsonConfig::ReadJson()
 {
 	Elevators = ReadStructFromJson<FStagedMovesParams>();
@@ -25,3 +27,5 @@ void UElevatorsJsonConfig::WriteJson()
 {
 	WriteStructToJson(Elevators);
 }
+#endif
+

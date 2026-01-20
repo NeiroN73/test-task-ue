@@ -57,10 +57,12 @@ private:
 	TMap<FGameplayTag, FStagedMoveParams> ElevatorsByTag;
 
 protected:
+#if WITH_EDITOR
 	virtual void ReadJson() override;
 	virtual void WriteJson() override;
+#endif
 	
 public:
-	const FStagedMoveParams* GetElevatorParamsByTag(FGameplayTag InTag) const;
 	virtual void Initialize() override;
+	const FStagedMoveParams* GetElevatorParamsByTag(FGameplayTag InTag) const;
 };

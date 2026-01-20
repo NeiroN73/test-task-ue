@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ProjectCoreRuntime/GameModes/Base/InstallerGameMode.h"
+#include "Base/InstallerGameMode.h"
 #include "EntryPointGameMode.generated.h"
 
 class UTickService;
@@ -15,17 +15,11 @@ UCLASS()
 class TESTTASKUE_API AEntryPointGameMode : public AInstallerGameMode
 {
 	GENERATED_BODY()
-	
+
+private:
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<UConfigs> Configs;
-	
-	UPROPERTY()
-	TObjectPtr<UInstallerStateMachine> StateMachine;
-	UPROPERTY()
-	TObjectPtr<UInstallerContainer> InstallerContainer;
-	UPROPERTY()
-	TWeakObjectPtr<UTickService> TickService;
-	
+
+public:
 	virtual void BeginPlay() override;
-	virtual void Tick(float DeltaTime) override;
 };

@@ -3,7 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "ProjectCoreRuntime/GameModes/Base/InstallerGameMode.h"
+#include "GameplayTagContainer.h"
+#include "Base/InstallerGameMode.h"
 #include "GameplayGameMode.generated.h"
 
 class UTickService;
@@ -14,9 +15,9 @@ class TESTTASKUE_API AGameplayGameMode : public AInstallerGameMode
 	GENERATED_BODY()
 
 private:
-	UPROPERTY()
-	TWeakObjectPtr<UTickService> TickService;
-	
+	UPROPERTY(EditAnywhere)
+	FGameplayTag PlayerTag;
+
+public:
 	virtual void BeginPlay() override;
-	virtual void Tick(float DeltaTime) override;
 };

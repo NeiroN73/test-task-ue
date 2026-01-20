@@ -18,7 +18,7 @@ public IInitializable
 
 private:
 	UPROPERTY()
-	TObjectPtr<UPrimitiveComponent> PrimitiveComponent;
+	TWeakObjectPtr<UPrimitiveComponent> PrimitiveComponent;
 
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,

@@ -15,12 +15,10 @@ class TESTTASKUE_API UInputConfig : public UConfig
 	GENERATED_BODY()
 
 public:
-	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere)
 	TObjectPtr<UInputMappingContext> PlayerMappingContext;
-
-	UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere)
 	TObjectPtr<UInputAction> MoveAction;
-
-	UPROPERTY(EditAnywhere, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere)
 	TObjectPtr<UInputAction> LookAction;
 };

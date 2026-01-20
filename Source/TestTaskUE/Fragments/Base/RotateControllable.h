@@ -4,18 +4,18 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
-#include "ControllerMovable.generated.h"
+#include "RotateControllable.generated.h"
 
 UINTERFACE()
-class UControllerMovable : public UInterface
+class URotateControllable : public UInterface
 {
 	GENERATED_BODY()
 };
 
-class TESTTASKUE_API IControllerMovable
+class TESTTASKUE_API IRotateControllable
 {
 	GENERATED_BODY()
 
 public:
-	virtual const FVector2D& GetMoveDirection() const = 0;
+	virtual const FVector2D& GetRotateDirection() const = 0;
 };

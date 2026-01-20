@@ -46,7 +46,7 @@ void APlayerHandler::Inject(UInstallerContainer* Container)
 void APlayerHandler::BuildFragments(UFragmentsContainer* FragmentsContainer)
 {
 	if (auto Fragment = FragmentsContainer->TryAddFragmentByInterfaces<UPlayerControllerFragment>(
-		{UControllerMovable::StaticClass(), UControllerRotatable::StaticClass()}))
+		{UMoveControllable::StaticClass(), URotateControllable::StaticClass()}))
 	{
 		Fragment->Configure(EnhancedInputComponent);
 	}

@@ -20,10 +20,11 @@ public IFragmentable
 	GENERATED_BODY()
 
 private:
-	UPROPERTY(EditAnywhere)
+	UPROPERTY()
 	TObjectPtr<UStaticMeshComponent> StaticMesh;
-	UPROPERTY(EditAnywhere)
+	UPROPERTY()
 	TObjectPtr<UBoxComponent> OverlapBox;
+	
 #if WITH_EDITORONLY_DATA
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<UElevatorPreviewComponent> ElevatorPreview;

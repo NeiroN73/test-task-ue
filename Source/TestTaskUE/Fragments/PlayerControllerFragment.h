@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Base/ControllerMovable.h"
-#include "Base/ControllerRotatable.h"
+#include "Base/MoveControllable.h"
+#include "Base/RotateControllable.h"
 #include "ProjectCoreRuntime/DependencyInjection/Injectable.h"
 #include "ProjectCoreRuntime/Fragments/Base/Fragment.h"
 #include "ProjectCoreRuntime/Interfaces/Initializable.h"
@@ -16,8 +16,8 @@ UCLASS()
 class TESTTASKUE_API UPlayerControllerFragment : public UFragment,
 public IInjectable,
 public IInitializable,
-public IControllerMovable,
-public IControllerRotatable
+public IMoveControllable,
+public IRotateControllable
 {
 	GENERATED_BODY()
 
@@ -26,14 +26,15 @@ private:
 	TWeakObjectPtr<UInputConfig> InputConfig;
 	UPROPERTY()
 	TWeakObjectPtr<UEnhancedInputComponent> EnhancedInputComponent;
+	
 	FVector2D MoveInputDirection;
 	FVector2D RotateInputDirection;
 	
 public:
+	void Configure(UEnhancedInputComponent* InEnhancedInputComponent);
 	virtual void Inject(UInstallerContainer* Container) override;
 	virtual void Initialize() override;
 	
-	void Configure(UEnhancedInputComponent* InEnhancedInputComponent);
 	virtual const FVector2D& GetMoveDirection() const override;
 	virtual const FVector2D& GetRotateDirection() const override;
 };

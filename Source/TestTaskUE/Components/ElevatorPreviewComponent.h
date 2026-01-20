@@ -17,19 +17,20 @@ class TESTTASKUE_API UElevatorPreviewComponent : public USceneComponent
 
 #if WITH_EDITORONLY_DATA
 private:
-	UPROPERTY(EditAnywhere, Category = "Elevator Preview")
+	UPROPERTY(EditAnywhere)
 	TObjectPtr<UElevatorsJsonConfig> ElevatorsJsonConfig;
 
-	UPROPERTY(EditAnywhere, Category = "Elevator Preview")
 	FGameplayTag ElevatorTag;
-
 	FStagedMoveParams StagedMoveParams;
 
 protected:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, 
 		FActorComponentTickFunction* ThisTickFunction) override;
+	virtual void PostLoad() override;
+
+	void DrawElevatorPreview();
+#endif
 	
 public:
 	UElevatorPreviewComponent();
-#endif
 };

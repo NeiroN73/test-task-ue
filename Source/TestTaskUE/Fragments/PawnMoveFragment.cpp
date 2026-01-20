@@ -2,8 +2,8 @@
 
 
 #include "PawnMoveFragment.h"
-#include "Base/ControllerMovable.h"
-#include "Base/ControllerRotatable.h"
+#include "Base/MoveControllable.h"
+#include "Base/RotateControllable.h"
 #include "GameFramework/Character.h"
 #include "ProjectCoreRuntime/Fragments/Base/FragmentsContainer.h"
 
@@ -12,13 +12,13 @@ void UPawnMoveFragment::Configure(ACharacter* InCharacter)
 	Character = InCharacter;
 }
 
-void UPawnMoveFragment::ProcessFragmentsFromContainer(UFragmentsContainer* InFragmentsContainer)
+void UPawnMoveFragment::InitializeFragments(UFragmentsContainer* InFragmentsContainer)
 {
-	if (auto Fragment = InFragmentsContainer->TryGetFragmentInterface<IControllerMovable>())
+	if (auto Fragment = InFragmentsContainer->TryGetFragmentInterface<IMoveControllable>())
 	{
 		InputMovable = Fragment;
 	}
-	if (auto Fragment = InFragmentsContainer->TryGetFragmentInterface<IControllerRotatable>())
+	if (auto Fragment = InFragmentsContainer->TryGetFragmentInterface<IRotateControllable>())
 	{
 		InputRotatable = Fragment;
 	}
