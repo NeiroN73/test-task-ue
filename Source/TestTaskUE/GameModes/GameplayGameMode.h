@@ -7,6 +7,7 @@
 #include "Base/InstallerGameMode.h"
 #include "GameplayGameMode.generated.h"
 
+class AElevatorHandler;
 class UTickService;
 
 UCLASS()
@@ -17,6 +18,11 @@ class TESTTASKUE_API AGameplayGameMode : public AInstallerGameMode
 private:
 	UPROPERTY(EditAnywhere)
 	FGameplayTag PlayerTag;
+
+	UPROPERTY(EditAnywhere)
+	AElevatorHandler* ElevatorHandler;
+	FTimerHandle ElevatorTimerHandle;
+	void PrintElevatorState();
 
 public:
 	virtual void BeginPlay() override;

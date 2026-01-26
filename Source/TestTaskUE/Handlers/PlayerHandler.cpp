@@ -43,8 +43,10 @@ void APlayerHandler::Inject(UInstallerContainer* Container)
 	InputConfig = Container->Resolve<UInputConfig>();
 }
 
-void APlayerHandler::BuildFragments(UFragmentsContainer* FragmentsContainer)
+void APlayerHandler::BuildFragments(UFragmentsContainer* InFragmentsContainer)
 {
+	FragmentsContainer = InFragmentsContainer;
+	
 	if (auto Fragment = FragmentsContainer->TryAddFragmentByInterfaces<UPlayerControllerFragment>(
 		{UMoveControllable::StaticClass(), URotateControllable::StaticClass()}))
 	{
@@ -54,5 +56,10 @@ void APlayerHandler::BuildFragments(UFragmentsContainer* FragmentsContainer)
 	{
 		Fragment->Configure(this);
 	}
+}
+
+UFragmentsContainer* APlayerHandler::GetFragmentsContainer()
+{
+	return FragmentsContainer;
 }
 

@@ -23,8 +23,11 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 	virtual void Inject(UInstallerContainer* Container) override;
 	virtual void BuildFragments(UFragmentsContainer* FragmentsContainer) override;
+	virtual UFragmentsContainer* GetFragmentsContainer() override;
 
 private:
+	UPROPERTY()
+	TObjectPtr<UFragmentsContainer> FragmentsContainer;
 	UPROPERTY()
 	TObjectPtr<UInputConfig> InputConfig;
 	UPROPERTY()

@@ -31,9 +31,12 @@ void AElevatorHandler::Inject(UInstallerContainer* Container)
 	ElevatorsJsonConfig = Container->Resolve<UElevatorsJsonConfig>();
 }
 
-void AElevatorHandler::BuildFragments(UFragmentsContainer* FragmentsContainer)
+void AElevatorHandler::BuildFragments(UFragmentsContainer* InFragmentsContainer)
 {
-	if (auto Fragment = FragmentsContainer->TryAddFragment<UStagedMoveFragment>())
+	FragmentsContainer = InFragmentsContainer;
+	
+	if (auto Fragment = FragmentsContainer->TryAddFragmentByInterfaces<UStagedMoveFragment>(
+		{UStagedMovable::StaticClass()}))
 	{
 		Fragment->Configure(this, ElevatorsJsonConfig->GetElevatorParamsByTag(Tag));
 	}
@@ -41,4 +44,9 @@ void AElevatorHandler::BuildFragments(UFragmentsContainer* FragmentsContainer)
 	{
 		Fragment->Configure(OverlapBox.Get());
 	}
+}
+
+UFragmentsContainer* AElevatorHandler::GetFragmentsContainer()
+{
+	return FragmentsContainer;
 }

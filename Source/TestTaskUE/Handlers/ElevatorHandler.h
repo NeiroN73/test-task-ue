@@ -21,6 +21,8 @@ public IFragmentable
 
 private:
 	UPROPERTY()
+	TObjectPtr<UFragmentsContainer> FragmentsContainer;
+	UPROPERTY()
 	TObjectPtr<UStaticMeshComponent> StaticMesh;
 	UPROPERTY()
 	TObjectPtr<UBoxComponent> OverlapBox;
@@ -37,4 +39,5 @@ public:
 	AElevatorHandler();
 	virtual void Inject(UInstallerContainer* Container) override;
 	virtual void BuildFragments(UFragmentsContainer* FragmentsContainer) override;
+	virtual UFragmentsContainer* GetFragmentsContainer() override;
 };
